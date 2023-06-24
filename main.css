@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     color-scheme: dark/light;
+    overflow-x: hidden;
 }
 
 :root {
@@ -32,8 +33,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    text-align: center;
     min-height: 100vh;
     background-color: var(--clr-hero);
 }
@@ -80,6 +79,7 @@ img {
 
 .hero-section {
     padding-bottom: var(--space-one);
+    text-align: center;
 }
 
 .hero-illustration {
@@ -140,6 +140,7 @@ img {
     padding: .53rem 1.2rem;
     border-radius: .8rem;
     margin-left: 0.5rem;
+    border: 1px solid var(--clr-btn);
     color: var(--clr-neutral); 
     text-decoration: none;
 }
@@ -147,12 +148,13 @@ img {
 .blogs-section {
     background: var(--clr-font-neutral);
     font-family: var(--ff-logo);
-    padding: var(--space-one);
+    padding: var(--space-one) 90rem;
+
 }
 
 .blog {
     margin: 1rem 0;
-    box-shadow: var(--clr-hero) 0px 7px 10px 0px;
+    box-shadow: var(--clr-hero) 0px 10px 10px 0px;
 }
 
 .blog-text {
@@ -196,4 +198,21 @@ img {
     margin-top: 1rem;
     text-transform: uppercase;
     border-radius: .2rem;
+}
+
+.footer {
+    background-color: var(--clr-footer);
+    padding: var(--space-one) 90rem;
+    text-align: left;
+    margin-left: -15rem;
+}
+
+.footer-logo {
+    color: var(--clr-btn);
+    font-family: var(--ff-logo);
+    font-weight: 600;
+}
+
+.footer-nav-links {
+    
 }

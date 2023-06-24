@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color-scheme: dark/light;
+}
+
+:root {
+    --clr-extra: #17aaaa;
+    --clr-hero: #17120d;
+    --clr-accent: #423025;
+    --clr-neutral: #FFFF;
+    --clr-footer: #685850;
+
+    --clr-btn: #17120d;
+
+    --ff-logo: 'Red Hat Display', sans-serif;
+    --ff-base: ;
+
+    --space-one: 2rem;
+
+    --clr-font-neutral: #8d8480;
+    --clr-font-head: #BEBBBA;
+
+    --width-base: 22rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--clr-hero);
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.menu-bar {
+    border: 1px solid var(--clr-font-neutral);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.menu-bar span {
+    display: block;
+    width: 1.5rem;
+    height: .125rem;
+    background-color: var(--clr-font-neutral);
+}
+
+.menu-bar > span:not(:last-child) {
+    margin-bottom: .3rem;
+}
+
+.logo {
+    margin-right: 15.2rem;
+    font-family: var(--ff-logo);
+    color: var(--clr-font-neutral);
+    font-weight: 700;
+}
+
+
+.nav-links > ul{
+    display: none;
+}
+
+.hero-section {
+    padding-bottom: var(--space-one);
+}
+
+.hero-illustration {
+    display: flex;
+}
+
+.hero-illustration img {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    width: var(--width-base);
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-accent);
+    font-family: var(--ff-logo);
+    padding: var(--space-one) var(--space-one) 0;
+    width: var(--width-base);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.text-container h1 {
+    color: var(--clr-font-head);
+}
+
+.text-container p {
+    margin-top: .8rem;
+    color: var(--clr-font-neutral);
+    line-height: 1.5rem;
+}
+
+.cta-button {
+    background-color: var(--clr-font-neutral);
+    padding: .5rem 0 .5rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: .8rem;
+}
+
+.cta-button > button {
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+
+.sign-up {
+    background: none;
+    padding-right: .5rem;
+    text-decoration: none;
+    color: var(--clr-btn);
+}
+
+.log-in {
+    background-color: var(--clr-btn);
+    padding: .53rem 1.2rem;
+    border-radius: .8rem;
+    margin-left: 0.5rem;
+    color: var(--clr-neutral); 
+    text-decoration: none;
+}
+
+.blogs-section {
+    background: var(--clr-font-neutral);
+    font-family: var(--ff-logo);
+    padding: var(--space-one);
+}
+
+.blog {
+    margin: 1rem 0;
+    box-shadow: var(--clr-hero) 0px 7px 10px 0px;
+}
+
+.blog-text {
+    font-family: var(--ff-logo);
+    padding: var(--space-one) var(--space-one);
+    width: var(--width-base);
+    background-color: var(--clr-hero);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.blog-text h2 {
+    color: var(--clr-font-head);
+}
+
+.blog-text p {
+    color: var(--clr-font-neutral);
+}
+
+.blog-image {
+    display: flex;
+}
+
+.blog-image > img {
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    width: var(--width-base);
+}
+
+.blog-title {
+    font-weight: 900;
+    color: var(--clr-font-neutral);
+}
+
+.more-btn {
+    border: none;
+    background-color: var(--clr-font-neutral);
+    color: var(--clr-font-head);
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+}

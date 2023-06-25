@@ -34,6 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding-inline: 2rem;
     background-color: var(--clr-hero);
 }
 
@@ -43,14 +44,42 @@ img {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1.2rem;
 }
 
+.nav-links {
+    /* display: none; */
+    position: fixed;
+    left: 10rem;
+    top: 0;
+    background-color: #68585080;
+    width: 100%;
+    height: 40%;
+    z-index: 1000;
+    backdrop-filter: blur(.2rem);
+}
+
+.nav-links > ul {
+    padding: 4rem;
+}
+
+.nav-links a {
+    font-family: var(--ff-logo);
+    color: var(--clr-btn);
+    line-height: 3rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
 .menu-bar {
-    border: 1px solid var(--clr-font-neutral);
+    border: 2px solid var(--clr-font-neutral);
     padding: .5rem;
+    background: none;
+    position: absolute;
+    right: 2rem;
+    z-index: 9999;
     border-radius: .5rem;
 }
 
@@ -58,7 +87,7 @@ img {
     display: block;
     width: 1.5rem;
     height: .125rem;
-    background-color: var(--clr-font-neutral);
+    background-color: var(--clr-font-neutral);  
 }
 
 .menu-bar > span:not(:last-child) {
@@ -66,16 +95,13 @@ img {
 }
 
 .logo {
-    margin-right: 15.2rem;
+    margin-right: 16rem;
     font-family: var(--ff-logo);
     color: var(--clr-font-neutral);
     font-weight: 700;
 }
 
 
-.nav-links > ul{
-    display: none;
-}
 
 .hero-section {
     padding-bottom: var(--space-one);
@@ -89,7 +115,6 @@ img {
 .hero-illustration img {
     border-top-right-radius: .5rem;
     border-top-left-radius: .5rem;
-    width: var(--width-base);
 }
 
 .text-container {
@@ -100,7 +125,6 @@ img {
     background-color: var(--clr-accent);
     font-family: var(--ff-logo);
     padding: var(--space-one) var(--space-one) 0;
-    width: var(--width-base);
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
 }
@@ -123,16 +147,15 @@ img {
 }
 
 .cta-button > button {
-    display: inline-block;
+    display: block;
     border: none;
     outline: none;
 }
 
 .sign-up {
-    background: none;
-    padding-right: .5rem;
     text-decoration: none;
     color: var(--clr-btn);
+    cursor: pointer;
 }
 
 .log-in {
@@ -215,4 +238,11 @@ img {
 
 .footer-nav-links {
     
+}
+
+
+@media screen and (min-width: 64rem){
+    .menu-bar{
+        display: none;
+    }
 }
